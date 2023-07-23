@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container,Typography } from '@mui/material';
 import Layout from '../shared/Layout';
-import { BookPaper } from '../system/styles';
+import { BookPaper } from '../util/styles';
 
 export default function Home() {
 
@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<Layout>
 			<Container>
-				<BookPaper elevation={18}>
+				<BookPaper>
 					<Typography variant='h4'>Greetings multiverse.</Typography>
 				</BookPaper>
 			</Container>

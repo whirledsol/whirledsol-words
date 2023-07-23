@@ -1,18 +1,23 @@
 import React from 'react';
-import {CssBaseline,Paper,Container} from '@mui/material';
+import { CssBaseline, } from '@mui/material';
 import Header from './Header';
 import Footer from './Footer';
 import { styled } from 'styled-components';
-import { COLORS } from '../system/theme';
+import { COLORS } from '../util/theme';
 
-export default function Layout(p){
 
-	const Body = styled.body`
-		background-color: ${COLORS.dark};
-		height: 100vh;
-		padding:1rem;
-		color: ${COLORS.light}
-	`;
+const Body = styled.div`
+	background-color: ${COLORS.dark};
+	min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+	color: ${COLORS.light}
+`;
+
+
+export default function Layout(p) {
+
 
 	//#region PROPS
 	const {
@@ -24,16 +29,16 @@ export default function Layout(p){
 
 	//#region RENDER
 	return (
-		<Body>
-		<CssBaseline />
-		<main>
-		<Header {...headerProps}/>
-		<Container>
-		{children}
-		</Container>
-		<Footer {...footerProps}/>
-		</main>
-		</Body>
+		<>
+			<CssBaseline />
+			<Body>
+				<Header {...headerProps} />
+				<main>
+					{children}
+				</main>
+				<Footer {...footerProps} />
+			</Body>
+		</>
 	)
 	//#endregion
 
