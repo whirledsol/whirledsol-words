@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "PT_Serif";
+  src: url("/fonts/PT_Serif/PTSerif-Regular.ttf") format("truetype");
+  src: url("/fonts/PT_Serif/PTSerif-Italic.ttf") format("truetype");
+  src: url("/fonts/PT_Serif/PTSerif-BoldItalic.ttf") format("truetype");
+  src: url("/fonts/PT_Serif/PTSerif-Bold.ttf") format("truetype");
+  font-weight: 300 700;
+}
