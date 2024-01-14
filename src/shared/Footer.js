@@ -1,6 +1,11 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import {Container} from '@mui/material';
+import { Container} from '@mui/material';
+
+const FooterContainer = styled.div`
+	margin:1rem 0 0.25rem;
+	font-size:0.75rem;
+`;
 
 export default function Footer() {
 
@@ -9,8 +14,8 @@ export default function Footer() {
 	//#region RENDER
 	return (
 		<footer>
-			<Container>
-				&copy; {currentYear} whirledsol
+			<Container maxWidth="sm">
+				<FooterContainer>&copy; {currentYear} whirledsol</FooterContainer>
 			</Container>
 		</footer>
 	)

@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
 export const COLORS = {
 	light: '#FFEECF',
 	offlight: '#ffeecf',
-	dark: '#2D2A32',
+	dark: '#100f12',
 	accent:'#967d69',
 	primary: '#023f78',
 	secondary: '#f36868'
@@ -20,7 +20,8 @@ const theme = createTheme({
 	  },
 	  typography: {
 		fontFamily: 'PT_Serif,serif',
-		fontSize:'12px'
+		fontSize:'12px',
+		fontWeight:300
 	  },
 
   });
